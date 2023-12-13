@@ -35,16 +35,14 @@ public class PassengerCar extends Vehicle{
             currentWeight = currentWeight - unloadWeight;
             printRemainingCargo();}
     }
-    private void printRemainingCapacity()
+    public void printRemainingCapacity()
     {
         if (currentWeight < maxWeight)
             System.out.println("Passenger places remained = " + (maxWeight-currentWeight));
         else
             System.out.println("You have reached the maximum number of Passengers.");
     }
-    private int getRemainingCapacity ()
-    { return maxWeight - currentWeight;}
-    private void printRemainingCargo ()
+    public void printRemainingCargo ()
     { System.out.println("Passengers in the car = " + currentWeight);}
 }
 

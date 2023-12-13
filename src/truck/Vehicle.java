@@ -71,8 +71,7 @@ public class Vehicle {
     public void move ()
     {
         if (currentWeight==0)
-        {System.out.println("Check your load information. Truck must be loaded first.");
-            return;}
+        {System.out.println("Check your load information. Truck must be loaded first.");}
         else if (currentFuel<(maxFuel/10))
         {System.out.println("Check your fluel information. Fluel levell is below the permissible value.");}
         else
@@ -100,19 +99,19 @@ public class Vehicle {
         {System.out.println("Truck needs refueling!");}
         else System.out.println("You can start your trip.");
     }
-    private void printRemainingCapacity()
+    public void printRemainingCapacity()
     {
         if (currentWeight < maxWeight)
             System.out.println("Remaining capacity = " + (maxWeight-currentWeight));
         else
             System.out.println("You have reached the maximum weight.");
     }
-    private int getRemainingCapacity ()
+    public int getRemainingCapacity ()
     {
         return maxWeight - currentWeight;
     }
 
-    private void printRemainingCargo ()
+    public void printRemainingCargo ()
     {
         System.out.println("Remaining Cargo weight = " + currentWeight);
     }

@@ -50,7 +50,5 @@ public class Main {
         for (Vehicle pCar : passengerCars)
         {System.out.println("Passenger Car " +pCar.getManufacturer()+ ", "+ pCar.getModel()+
                 ": Driver: "+ pCar.getDriver());}
-
-
     }
 }

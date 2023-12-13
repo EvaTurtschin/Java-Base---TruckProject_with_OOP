@@ -6,5 +6,4 @@ public class Truck extends Vehicle {
     {
         super(model, manufacturer, year, colour, maxWeight, maxFuel, driver);
     }
-
 }
